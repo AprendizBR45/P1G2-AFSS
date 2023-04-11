@@ -19,7 +19,28 @@
 <button onclick="factorialNumero()">factorial</button>
 <p>7._ Verifica si un numero es par o impar</p>
 <button onclick="esPar()">esPar</button>
+<p>8._ condicional compuesta </p>
+<button onclick="condicionarCompuesta()">condicionarCompuesta</button>
+<p>9._ condicional compuesta AND </p>
+<button onclick="condicionarCompuesta_AND()">condicionarCompuesta</button>
 <script>
+
+//IF COMPUESTO 
+function condicionarCompuesta_AND(){
+    if(((10 >  5) && ( 7 == 8)) && (5==5)){
+        alert("TRUE")
+    }else{
+        alert("FALSE")
+    }
+}
+
+function condicionarCompuesta(){
+    if((10 >  5) && ( 7 == 8)){
+        alert("TRUE")
+    }else{
+        alert("FALSE")
+    }
+}
 
 function mostrarSoloPares_WHILE(){
     var numero = 15
@@ -44,14 +65,12 @@ function mostrarParesDeN_FOR(){
         }
     }
 }
-
 function contarNumero_FOR(){
     var numero = 5 
     for (var i = 1; i <= numero; i++){
         alert(i)
     }
 }
-
 function contarNumero_WHILE(){
     var numero = 5 
     var i = 1 
@@ -60,8 +79,6 @@ function contarNumero_WHILE(){
         i = i + 1 
     }
 }
-
-
 function mostrarNumerosParesDeN(){
     var numero = 15 
     var i = 1 
@@ -75,7 +92,6 @@ function mostrarNumerosParesDeN(){
     }
     alert("FIN")
 }
-
 function factorialNumero(){
     var numero = 4
     var i = 1
@@ -86,7 +102,6 @@ function factorialNumero(){
     }
     alert("El Factorial de " + numero + " es : " + resultado)
 }
-
 function esPar(){
     var numero = 10 
     if(10 % 2 == 0){
@@ -95,6 +110,7 @@ function esPar(){
         alert( numero + " No Es PAR")
     }
 }
+
 </script>
 </body>
 </html>
